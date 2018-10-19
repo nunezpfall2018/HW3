@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div> The tweet text with the most non-whitespace characters is: </div>
+<br><br>
+
+{% if longest_tweet %}
+<div>
+    {{ longest_tweet["tweet"] }}, <i>posted by</i> <strong>@{{ longest_tweet["username"] }}</strong>  {{ longest_tweet["display_name"] }}<br><br>
+</div>
+{% endif %}
+
+{% if not longest_tweet %}
+    There are no saved tweets to show.
+{% endif %}
+{% endblock %}
