@@ -5,7 +5,7 @@
 #####################
 #** Note: Code is my own, any students I have tutored using my code must include that I have 
 #** helped tutored them on ALL homework assignments using my code in SI 206, SI 339 and SI 364. You must notify our GSIs and Professors.
-#** ---> Tutor: Nunez, Priscilla (Include what lines of code here, also include what you learned by the code used.)
+#** ---> Tutor: Nunez, Priscilla (Include what assignment number here, also include the lines of code and what you learned by the code used.)
 #####################
 
 #** Import statements
