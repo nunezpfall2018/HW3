@@ -4,8 +4,10 @@
 
 #####################
 #** Note: Code is my own, any students I have tutored using my code must include that I have 
-#** helped tutored them on ALL homework assignments using my code in SI 206, SI 339 and SI 364. You must notify our GSIs and Professors.
-#** ---> Tutor: Nunez, Priscilla (Include what assignment number here, also include the lines of code and what you learned by the code used.)
+#** helped tutor them on ALL homework assignments using my code in SI 206, SI 339 and SI 364. 
+#** Please notify our GSIs and Professors.
+#** ---> Tutor: Nunez, Priscilla 
+#** (Include what assignment number here, also include the lines of code and what you learned by the code used.)
 #####################
 
 #** Import statements
@@ -137,7 +139,7 @@ def see_all_tweets():
     for tweet in tweets:
         user = User.query.filter_by(id=tweet.user_id).first()            #** Created a query for th tweets
         all_tweets.append([tweet.text, user.username])                   #** As well as username
-    return render_template('all_tweets.html', all_tweets= all_tweets if len(all_tweets) else 0) #** alternative would be all_tweets=tweets_users 
+    return render_template('all_tweets.html', all_tweets= all_tweets if len(all_tweets) else 0) #** Alternative would be all_tweets=tweets_users 
 
 @app.route('/all_users')
 def see_all_users():
